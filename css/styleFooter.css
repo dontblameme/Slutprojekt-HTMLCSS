@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Frank+Ruhl+Libre&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+footer h1{
+    font-family: 'Frank Ruhl Libre', serif;
+
+}
+footer p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1vw;
+}
+footer
+{
+    width: 99vw;
+    text-align: center;
+    background-color: #A9A19E;
+}
+footer i
+{
+    color: #df0202;
+    
+
+}
+.how-it-works card h1
+{
+
+    font-size: 2vw;
+}
+.how-it-works card h2
+{
+    text-align: start;
+    opacity: 0.5;
+    color: #000000;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.how-it-works   
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .how-it-works card   {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 0.5vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 30px;
+    text-align: center;
+  }
+  .how-it-works .main2bluecard  
+  {
+    background-color: #C7DDEA;
+  }
+  .how-it-works .main2greycard
+  {
+    background-color: #A9A19E;
+  }
+  .how-it-works .main2orangecard 
+  {
+    background-color: #F17949;
+  }

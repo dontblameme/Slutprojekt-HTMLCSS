@@ -1,0 +1,65 @@
+main {
+    display: grid;
+    /*grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "personal  "
+    "card "
+    "about "*/
+}
+.grey-area-main {
+    background-color: #A9A19E;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    min-width: 99vw; /*Alltid bred till kanter*/
+    min-height: 50vh;
+   
+}
+.grey-area-main > h1 {
+    max-width: 15vw;
+    
+}
+
+.card-area-main {
+    /*grå och gul ska mötas bakom card-area*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card-area-main > * {
+    flex-direction: column;
+}
+
+.card-area-main img {
+    max-width: 10vw;
+}
+
+
+
+
+
+.yellow-area-main {
+    background-color: #FAB131;
+    display:flex;
+    flex-direction: column;
+    min-width: 99vw;
+    height: auto;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.yellow-area-main > *{
+    
+    max-width: 30vw;
+}
+
+/*WIP*/                     
+.join-button {                  
+    background-color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    max-width: 150px;
+    max-height: 40px;
+    border: none;
+    border-radius: 20px;
+}

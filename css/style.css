@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Frank+Ruhl+Libre&display=swap');
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 40px;
+
+}
+p{
+    font-family: 'Fira Sans', sans-serif;
+
+}
+header{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+}
+.family{
+    height: 400px;
+}
+.blue-card{
+    background-color: #FAB131;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.orange-card-header{  
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    background-color: aqua;
+}
+.yellow-card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+}
