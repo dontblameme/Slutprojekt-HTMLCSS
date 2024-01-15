@@ -11,24 +11,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="scrolltop"></div>
     <header>
+        
         <section class ="blue-card">
-            <h1>We've got you Covered</h1>
-            <p>Together we keep each other safe at home or at work. By paying a tiny fee a day, you are fully insured all day long.
+            <img class="family" src="img/family.png" alt="icons">        
+            <h1>We've got you Covered.</h1>
+            <p class="bigger">Together we keep each other safe at home or at work. By paying a tiny fee a day, you are fully insured all day long.
                 You can get it for as little as $0.4 per day.
             </p>
-            <button class ="join-button">JOIN NOW</button>
-            <img class="family" src="img/family.png" alt="icons">
+            <br>            
+                <button class ="join-button">JOIN NOW</button>
+               
         </section>
-
         <section class ="orange-card-header">
             <p>What do we have to offer?</p>
-            <h2>Learn more</h2>
+            <h2 class="white">Learn more</h2>
+           
         </section>
         
         <section class ="yellow-card-header">
             <p>What are you waiting for?</p>
-            <h2>Join today</h2>
+            <h2 class="white">Join today</h2>
         </section>
         
         
@@ -43,9 +47,12 @@
     <main>
 
         <section class = "grey-area-main">
-            <h1>Your personal financial safety net online.</h1>
-            <button class ="join-button">JOIN NOW</button>
-            <p> Lorem ipsum dolor sit amet, consectetur 
+            <div class ="left-grey-area-main">
+                <h1>Your personal financial safety net online.</h1>
+                <button class ="join-button">JOIN NOW</button>
+            </div>
+            <div class ="right-grey-area-main">
+                <p> Lorem ipsum dolor sit amet, consectetur 
                 adipiscing elit. Ut tempor ligula vel felis 
                 cursus egestas. Etiam consectetur finibus 
                 facilisis. Proin accumsan auctor purus, quis 
@@ -55,12 +62,20 @@
                 tempor blandit. Mauris hendrerit 
                 ullamcorper ex quis congue donec vel 
                 finibus libero
-            </p>
+                </p>
+            </div>
         </section>
 
-        <section class ="card-area-main">
-            <card>
-                <img src="/img/child.png" alt="child">
+        
+
+        <section class ="yellow-area-main">
+            
+            <section class ="card-area-main">
+            <card class="child-card">
+                <div class="card-img-wrapper">
+                <img class ="img-child" src="/img/child.png" alt="child">
+                </div>
+                <div class="card-text-wrapper">
                 <h3>Children</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit. Ut tempor ligula vel felis 
@@ -68,10 +83,14 @@
                     facilisis. Proin accumsan auctor purus, 
                     quis finibus tellus accumsan id.
                 </p>
+            </div>
             </card>
 
-            <card>
-                <img src="/img/adult.png" alt="adult">
+            <card class="adult-card">
+                <div class="card-img-wrapper">
+                <img class="img-adult" src="/img/adult.png" alt="adult">
+                </div>
+                <div class="card-text-wrapper">
                 <h3>Just right</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit. Ut tempor ligula vel felis 
@@ -79,10 +98,14 @@
                     facilisis. Proin accumsan auctor purus, 
                     quis finibus tellus accumsan id.
                 </p>
+            </div>
             </card>
 
-            <card>
-                <img src="/img/old.png" alt="old man">
+            <card class="oldman-card">
+                <div class="card-img-wrapper">
+                <img class="img-oldman" src="/img/old.png" alt="old man">
+                </div>
+                <div class="card-text-wrapper">
                 <h3>Old fart</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit. Ut tempor ligula vel felis 
@@ -90,41 +113,46 @@
                     facilisis. Proin accumsan auctor purus, 
                     quis finibus tellus accumsan id.
                 </p>
+            </div>
             </card>
             
         </section>
-        <section class ="yellow-area-main">
-            <h1>About us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac 
-                ultricies massa. Donec id malesuada magna. Pellentesque aliquet 
-                libero erat, fermentum commodo sapien congue ac. Integer a elit 
-                lorem. Vestibulum id venenatis diam, et eleifend augue. Curabitur ex 
-                tortor, auctor lobortis augue at, euismod bibendum neque. Aenean 
-                ullamcorper nibh vitae orci laoreet, eu dictum nisi ultrices. Sed 
-                condimentum nibh neque, at ultricies augue facilisis non.
-                
-                
-                Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean 
-                imperdiet, leo nec consectetur blandit, risus erat commodo tortor, sit 
-                amet dignissim orci lorem vel felis. Ut tempus dignissim.
-            </p>
+
+            <section class="about-us">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac 
+                    ultricies massa. Donec id malesuada magna. Pellentesque aliquet 
+                    libero erat, fermentum commodo sapien congue ac. Integer a elit 
+                    lorem. Vestibulum id venenatis diam, et eleifend augue. Curabitur ex 
+                    tortor, auctor lobortis augue at, euismod bibendum neque. Aenean 
+                    ullamcorper nibh vitae orci laoreet, eu dictum nisi ultrices. Sed 
+                    condimentum nibh neque, at ultricies augue facilisis non.
+                    <br />
+                    <br />
+                    Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean 
+                    imperdiet, leo nec consectetur blandit, risus erat commodo tortor, sit 
+                    amet dignissim orci lorem vel felis. Ut tempus dignissim.
+                </p>
+            </section>
 
         </section>
+        
         <section class ="how-it-works">
+            
             <card class="main2bluecard">
-                <h1>How It works?</h1>
+                <h1>How <br />It works?</h1>
             </card>
             <card>
                 <h2>01</h2>
-                <p>Answer a few questions about yourself</p>
+                <p>Answer a few questions<br /> about yourself</p>
             </card>
             <card class="main2greycard">
                 <h2>02</h2>
-                <p>Choose a plan. Get a quote.</p>
+                <p>Choose a plan.<br />Get a quote.</p>
             </card>
             <card>
                 <h2>03</h2>
-                <p>Answer some questions about your medical history.</p>
+                <p>Answer some questions about<br />your medical history.</p>
             </card>
             <card class="main2orangecard">
                 <h2>04</h2>
@@ -137,8 +165,11 @@
         </section>
     </main>
     <footer>
-        <i class="fa-solid fa-chevron-up"></i>
-        <p>Take me up again!</p>
+        <a href="#scrolltop">
+            <i class="fa-solid fa-chevron-up"></i>
+            <p>Take me up again!</p>
+        </a>
+        <section> </section>
     </footer>
     
 </body>
