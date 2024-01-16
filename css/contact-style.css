@@ -1,0 +1,100 @@
+header{
+    background-color: #C7DDEA;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        position: absolute;
+        margin-left: 600px;
+        margin-top: 75px;
+    }
+}
+main{
+    background-color: #A9A19E;
+    display: grid;
+    padding: 70px;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+main .form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+label{
+    font-family: 'Fira Sans', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    padding: 25px;
+}
+.email{
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 30px;
+    height: 40px;
+    font-size: 16px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+#yourmessage{
+    margin-bottom: 30px;
+}
+main section button{
+    margin-left: auto;
+}
+textarea {
+    font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+.adressbox
+{
+    color: white;
+    background-color: #FAB131;
+    width: 200px;
+    height: 130px;
+    padding-left: 20px;
+    margin-top: -375px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 2;
+}
+.adressbox > *
+{
+    font-weight: bolder;
+    padding-top: 5px;
+}
+.adressbox h2
+{
+    font-size: 30px;
+}
+.adressbox p
+{
+    font-size: 15px;
+    margin-top: -20px;
+}
+iframe
+{   
+    filter:invert(1);
+    
+    position: relative;
+    z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+    header{
+        text-align: left;
+    }
+}

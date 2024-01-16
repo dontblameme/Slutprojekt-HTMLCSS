@@ -50,11 +50,12 @@ main {
     color: white;  
 }
 
+
+/*grey-area*/
+/*---------------------------*/
 .grey-area-main .join-button {
     margin-left: 90px;
 }
-/*grey-area*/
-/*---------------------------*/
 
 
 
@@ -67,14 +68,14 @@ main {
     max-width: 1100px;
     display: grid;
     margin-top: -200px;
- 
+    gap: 10px
+
 }
 
 .card-area-main card { 
     background-color: white;
     border-radius: 5px;
     width: 250px;
-    margin-left: 50px; 
 }
 
 .card-area-main > * {
@@ -107,49 +108,117 @@ main {
 /*text-wrap*/
 
 
-.card-img-wrapper 
+.card-img-wrapper-1, .card-img-wrapper-2, .card-img-wrapper-3
 {
     width: 230px;
     height: 175px;
-    background-color: rgb(186, 220, 243);
+    background-color: aquamarine;
     border-radius: 5px;
     margin: -25px;
     margin-bottom: 0px;
+}
+.card-img-wrapper-1 {
+    background-color: rgb(196, 218, 252);
+}
+.card-img-wrapper-2 {
+    background-color: #FAB131;
+}
+.card-img-wrapper-3 {
+    background-color: rgb(252, 129, 99);
 }
 
 
 /*Specifika kort*/
 
 .child-card {
-    
-    margin-left: 140px !important; /*skickar in bilden åt mitten*/
+    margin-left: 5vw !important; /*skickar in bilden åt mitten*/
 }
 .img-child {
     width: 100px;
     margin-left: 20px;
-    margin: 10px;
+    margin: 10px;    
 }
 
-.adult-card {
-    
-}
 .img-adult {
     width: 100px;
     margin: 5px;
 }
 
-.oldman-card {
-    background-color: rgb(252, 129, 99);
-    margin-right: 140px !important; /*skickar in bilden åt mitten*/
-}
 .img-oldman {
     width: 130px;
     margin-top: 10px;
 }
 
 /*card*/
-/*---------------------------*/
+/*Mobilanpassning grey-area och card-area*/
+@media only screen and (max-width: 600px) 
+{
 
+main {
+    display: block;
+    max-width: 600px;
+    font-size: 120%;
+}
+/*GREY AREA*/
+.grey-area-main {
+    display: block;
+    margin-top: 0px;    /*override*/
+    padding-bottom: 500px;/*test*/
+}
+.grey-area-main  h1 {
+    margin-left: 0px;   /*override*/
+    margin-bottom: 0px; /*override*/
+}
+.left-grey-area-main, .right-grey-area-main {
+    margin: 30px;
+    max-width: 99vw;
+    min-width: 300px;
+}
+.grey-area-main .join-button {
+    margin-left: 55vw;   
+}
+
+/*CARD-AREA*/
+.card-area-main {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 600px;
+    gap: 60px;
+    margin-top: -500px;
+    
+    
+}
+.card-area-main card { 
+    min-width: 350px;
+    margin-left: 0px; 
+}
+
+.card-img-wrapper-1, .card-img-wrapper-2, .card-img-wrapper-3
+{
+    width: 300px;
+    height: 175px;
+}
+
+/*override på en fullösning*/
+.child-card {
+    margin-left: 0px !important;
+}
+
+.oldman-card {
+    margin-right: 0px !important; 
+    
+}
+
+.img-adult
+{
+    position: absolute;
+    clip: rect(0px,100px,170px,0px);
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+
+}
+}/*Mobilanpassning grey-area och card-area*/
 
 
 .yellow-area-main {
@@ -162,7 +231,6 @@ main {
     justify-content: center;
     align-items: center; 
     text-align: center;
-    
 }
 
 
@@ -192,7 +260,8 @@ main {
     justify-content: center;
     align-items: center; 
     text-align: center;
-    padding: 150px;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 .about-us h1 
 {
@@ -205,12 +274,12 @@ main {
     max-width: 20vw;
     opacity: 0.6;
     font-weight: bolder;
-    
 }
 
 
 @media only screen and (max-width: 600px) 
 {
+
     .yellow-area-main {
         background-color: #FAB131;
         display:flex;
@@ -222,23 +291,23 @@ main {
         align-items: center; 
         text-align: center;
         padding: 10px;
-        
-        
+  
     }
     .about-us > *{
 
         max-width: 99vw;
+        padding: 0px;
 
     }
     .about-us h1{
-        margin-top: 50px;
+        margin-top: 0px;
         margin-bottom: 10px;
     }
     .about-us p
     {
         margin-left: 0px;
         margin-right: 0px;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
     }
 
 }
